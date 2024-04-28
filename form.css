@@ -1,0 +1,63 @@
+.form-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+form{
+    box-shadow: 0px 0px 15px #b82f27;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+form h1, form p{
+    padding-bottom: 10px;
+}
+
+form p{
+    font-size: 18px;
+}
+
+form span{
+    color:#46AFB2;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    border-bottom:1px solid #b82f27;
+    color: black;
+    font-size: 15px;
+    outline: 0;
+    padding: 10px 5px;
+}
+form input, form textarea,::placeholder{
+    color: black;
+}
+form textarea{
+    resize: none;
+}
+
+form .bnt input{
+    width: 75%;
+    border: 0;
+    background-color: #b82f27;
+    color: #fff;
+    border-radius: 12px;
+    transition: .2s;
+}
+form .bnt input:hover{
+    transform: scale(1.05);
+}
+form .bnt input:active{
+    background-color: #46AFB2;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="shortcut icon" href="img/maxdoc-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@900&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="navScript.js"></script>
+    <script defer src="calendario.js"></script>
+    <title>MaxDoc - home</title>
+</head>
+<body>
+    <header class="navBar"><!--navbar-->
+        <nav class="nav">
+            <div class="logo">
+                <h1 class="logoTxt">MAX</h1>
+                <img class="logoimg" src="img/maxdoc-logo.png" width="30" height="30">
+                <h1 class="logoTxt">DOC</h1>
+            </div>
+            <button class="hamburger"></button>
+            <ul class="navList">
+                <li><a href="index.html"><button class="botao">Início</button></a></li>
+                <li><a href="#"><button class="botao">Medicamentos<i class='bx bx-down-arrow-alt'></i></button></a>
+                    <div class="submenu1">
+                        <ul>
+                            <li><a href="#">Estoque</a></li>
+                            <li><a href="medicamentos.html">Adicionar remédio</a></li>
+                            <li><a href="#">Remover rémedio</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><button class="botao">Lembretes<i class='bx bx-down-arrow-alt'></i></button></a>
+                    <div class="submenu1">
+                        <ul>
+                            <li><a href="#">Chegar Lembretes</a></li>
+                            <li><a href="lembrete.html">Criar lembrete</a></li>
+                            <li><a href="#">Apagar lembrete</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><img src="img/usuario.png" alt="ftUsuario" width="30" height="30"></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section><!--topo do site-->
+        <div class="topoSite">
+            <div class="interface">
+                <div class="home">
+                    <h1>OLÁ, SEJA BEM VINDO NOVAMENTE (USUARIO)!</h1>
+                </div>
+                <div class="lembrete">
+                    <h2>Proximo Rémedio a ser tomado é " Deca-Durabolin "</h2>
+                     <p>Deca é uma abreviação comum para o esteroide anabolizante conhecido como Deca-Durabolin. O nome químico completo da substância é decanoato de nandrolona. Este composto é derivado da nandrolona e é frequentemente utilizado para fins terapêuticos e não terapêuticos</p>
+                 </div>
+                <div class="calendario">
+                    <div class="diasSemanas">
+                            <p>SEGUNDA</p>
+                            <p>TERÇA</p>
+                            <p>QUARTA</p>
+                            <p>QUINTA</p>
+                            <p>SEXTA</p>
+                            <p>SÁBADO</p>
+                            <p>DOMINGO</p>
+                    </div>
+                    <div class="numerosDias">
+                        <p class="mesanterior">30</p>
+                        <p class="mesanterior">31</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="medicines">
+        <div class="title">
+            <h1><i class='bx bxs-basket'></i>Medicamentos</h1>
+        </div>
+        <div class="descricao">
+            <ul>
+                <li>
+                    <h2>Medicamento</h2>
+                    <p>Alívio imediato para os sintomas, restaurando o equilíbrio e promovendo bem-estar.</p>
+                </li>
+                <li>
+                    <h2>Medicamento</h2>
+                    <p>Alívio imediato para os sintomas, restaurando o equilíbrio e promovendo bem-estar.</p>
+                </li>
+                <li>
+                    <h2>Medicamento</h2>
+                    <p>Alívio imediato para os sintomas, restaurando o equilíbrio e promovendo bem-estar.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    <footer class="main-footer">
+        <div class="logo">
+            <h1 class="logoTxt">MAX</h1>
+            <img class="logoimg" src="img/maxdoc-logo.png" width="30" height="30">
+            <h1 class="logoTxt">DOC</h1>
+        </div>
+    </footer>
+    
+</body>
+</html>

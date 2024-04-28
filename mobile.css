@@ -1,0 +1,112 @@
+
+
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #FFF;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #FFF;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.home {
+    display: none;
+}
+
+
+
+@media (max-width: 750px) {
+    .hamburger{
+        display: block;
+        z-index: 1;
+    }
+
+    .navList {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #b82f27;
+        clip-path: circle(100px at 112% -95px);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav.active .navList {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .navList a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .navList li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+    .navList li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+    .navList li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    .nav.active .navList a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .interface {
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center;
+    }
+
+    .home {
+        display: block;
+        padding: 4%
+    }
+
+    .lembrete{
+        margin: 8% 2%;
+    }
+
+    .calendario{
+        width: 80vw; /* 50% da largura da janela do navegador */
+        height: 50vh; /* 50% da altura da janela do navegador */
+    }
+}

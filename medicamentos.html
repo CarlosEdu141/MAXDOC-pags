@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="shortcut icon" href="img/maxdoc-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@900&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="navScript.js"></script>
+    <script defer src="calendario.js"></script>
+    <title>MaxDoc - Medicamentos</title>
+</head>
+<body>
+    <header class="navBar"><!--navbar-->
+        <nav class="nav">
+            <div class="logo">
+                <h1 class="logoTxt">MAX</h1>
+                <img class="logoimg" src="img/maxdoc-logo.png" width="30" height="30">
+                <h1 class="logoTxt">DOC</h1>
+            </div>
+            <button class="hamburger"></button>
+            <ul class="navList">
+                <li><a href="index.html"><button class="botao">Início</button></a></li>
+                <li><a href=""><button class="botao">Medicamentos<i class='bx bx-down-arrow-alt'></i></button></a>
+                    <div class="submenu1">
+                        <ul>
+                            <li><a href="#">Estoque</a></li>
+                            <li><a href="medicamentos.html">Adicionar remédio</a></li>
+                            <li><a href="#">Remover rémedio</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><button class="botao">Lembretes<i class='bx bx-down-arrow-alt'></i></button></a>
+                    <div class="submenu1">
+                        <ul>
+                            <li><a href="#">Chegar Lembretes</a></li>
+                            <li><a href="lembrete.html">Criar lembrete</a></li>
+                            <li><a href="#">Apagar lembrete</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><img src="img/usuario.png" alt="ftUsuario" width="30" height="30"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--              principal   -->
+    <section class="form-container">
+        <div class="container">
+            <form action="">
+                <h1>Bula Do Medicamento</h1>
+                <p> informação completa do remédio, contendo <span>Nome</span>,<span>categoria</span>, tipo de <span>Dosagem</span> e <span>Concentração, e <span>Quantidade</span></span></p>
+                <div class="input">
+                    <input type="text" name="" id="med-nom" placeholder="NOME GENÉRICO OU COMERCIAL" required>
+                    <input type="text" name="" id="med-cat" placeholder="CATEGORIA" required>
+                    <input type="text" name="" id="med-for" placeholder="FORMULÇÃO E VIA DE ADMINISTRAÇÃO" required>
+                    <input type="text" name="" id="med-dos" placeholder="DOSAGEM E CONCENTRAÇÃO" required>
+                    <textarea name="" id="med-obs" placeholder="OBSERVAÇÃO" cols="30" rows="10"></textarea>
+                    <div class="bnt"><input type="submit" value="Salvar Medicamento"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--                   footer               -->
+    <footer class="main-footer">
+        <div class="logo">
+            <h1 class="logoTxt">MAX</h1>
+            <img class="logoimg" src="img/maxdoc-logo.png" width="30" height="30">
+            <h1 class="logoTxt">DOC</h1>
+        </div>
+    </footer>
+</body>
+</html>
